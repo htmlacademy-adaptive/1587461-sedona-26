@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Marina Stebunova](https://up.htmlacademy.ru/adaptive/26/user/1587461).
-* Наставник: `Анна Лисененкова`.
+* Наставник: [Anna Lisenenkova](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
