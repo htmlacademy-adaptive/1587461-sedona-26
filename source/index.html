@@ -1,12 +1,177 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img src="img/logotype-sedona.svg" width="185" height="96" alt="Городок Седона">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggler" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a>Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a>Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a>HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+    <main class="main-container">
+      <h1 class="visually-hidden">Городок Седона</h1>
+      <!--2-й логотип, как назвать?-->
+      <section class="header">
+        <img class="header__logo" src="#" width="458" height="352"
+          alt="Добро пожаловать в великолепный город Седона!.">
 
+      </section>
+      <!--Лид блок - тк он есть на каждой странице со своим смыслом, но с одинаковым стилем (может стиль поменяться!) я не отношу его к преимуществам-->
+
+          <div class="lead">
+            <h2 class="lead__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+            <p class="lead__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
+      <!--Блок преимеществ-->
+        <section class="advantages">
+          <h2 class="visually-hidden">Преимущества.</h2>
+          <div class="advantages__wrapper">
+
+            <ol class="advantages__list">
+      <!--Блок преимуществ 1-->
+              <li class="advantages__item">
+                <div class="advantages__item-wrapper">
+                  <div class="advantages__item-text">
+                    <h3 class="advantages__title">Настоящий городок</h3>
+                    <span class="">-- №1 --</span>
+                    <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                  </div>
+                  <div class="advantages__item-pic">
+                    <img src="#" width="" height="" alt="Фотография городка.">
+                  </div>
+                </div>
+
+                <ul class="advantages__sublist">
+                  <li class="advantages__sublist advantages__sublist--housing">
+                    <div class="advantages__sublist-wrapper">
+                      <div class="advantages__sublist-pic">
+                        <img src="#" width="" height="" alt="Изображение домик.">
+                      </div>
+                      <h4 class="advantages__sublist-title">Жильё</h4>
+                      <p class="advantages__description-desc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                    </div>
+                  </li>
+                <li class="advantages__item advantages__sublist--meal">
+                  <div class="advantages__sublist-wrapper">
+                    <div class="advantages__sublist-pic">
+                      <img class="" src="#" width="" height="" alt="Изображение бургера.">
+                    </div>
+                    <h4 class="advantages__sublist-title sublist-title-meal">Еда</h4>
+                    <p class="advantages__description-desc">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                  </div>
+                </li>
+                <li class="advantages__item advantages__sublist--souvenirs">
+                  <div class="advantages__sublist-wrapper">
+                    <div class="advantages__sublist-pic">
+                      <img src="#" width="" height="" alt="Изображение подарка">
+                    </div>
+                    <h4 class="advantages__sublist-title">Сувениры</h4>
+                    <p class="advantages__description-desc">Не только китайского, но и настоящего местного производства!</p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+      <!--Блок преимуществ 2-->
+            <li class="advantages__item advantages_item-full">
+              <div class="advantages__item-wrapper">
+                <div class="advantages__tem-pic">
+                  <img src="#" width="" height="" alt="Фотография гор">
+                </div>
+                <div class="advantages__item-text">
+                  <h3 class="advantages__item-title">Там есть мост Дьяволa</h3>
+                  <span class="">-- №2 --</span>
+                  <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                </div>
+              </div>
+            </li>
+      <!--Блок преимуществ 3-->
+            <li class="advantages__item">
+              <div class="advantages__wrapper-item">
+                <h3 class="advantages__title">Небольшая Площадь</h3>
+                <span class="">-- №3 --</span>
+                <p class="advantages-description">Все достопримечательности находятся очень близко</p>
+              </div>
+            </li>
+      <!--Блок преимуществ 4-->
+            <li class="advantages__item">
+              <div class="advantages__wrapper-item">
+                <h3 class="advantages__title">Красивая дорога</h3>
+                <span class="">-- №4 --</span>
+                <p class="advantages-description advantages-text-city">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
+            </li>
+      <!--Блок преимуществ 5-->
+            <li class="advantages__item">
+              <div class="advantages__wrapper-item">
+                <h3 class="advantages__title">Мало туристов</h3>
+                <span class="">-- №5 --</span>
+                <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <!--Блок заинтересовались-->
+      <section class="appointment">
+        <h2 class="appointment__title">Заинтересовались?</h2>
+        <p class="appointment__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="appointment__button" href="#">Найти гостиницу</a>
+      </section>
+      <!--Блок карта-->
+      <section class="map">
+
+      </section>
+
+
+
+    </main>
+    <footer class="footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__c">
+        </div>
+        <div class="main-footer__social social">
+          <b class="social__title">Давайте дружить!</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
