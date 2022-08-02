@@ -6,50 +6,132 @@
   </head>
 
 <body class="page__body">
-  <header class="main-header">
-    <a class="main-header__logo">
+  <header class="page-header">
+    <a class="page-header__logo">
       <img src="img/logotype-sedona.svg" width="185" height="96" alt="Городок Седона">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggler" type="button">
-        <span class="visually-hidden">Открыть меню.</span>
+    <nav class="page-nav">
+      <button class="page-nav__toggler" type="button">
+        <span class="visually-hidden ">Открыть меню.</span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a>Главная</a>
+      <div class="page-nav__wrapper">
+        <ul class="page-nav__list nav-list ">
+          <li class="nav-list__item">
+            <a class="nav__link nav__link--active" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a>Фото и видео</a>
+          <li class="nav-list__item" >
+            <a class="nav-link" href="catalog.html">Фото и видео</a>
           </li>
-          <li class="site-list__item">
-            <a>Форма отзыва</a>
+          <li class="nav-list__item">
+            <a class="nav-link" href="form.html">Форма отзыва</a>
           </li>
-          <li class="site-list__item">
-            <a>HTML Academy</a>
+          <li class="nav-list__item">
+            <a class="nav-link" href="#">HTML Academy</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <main class="main-container">
+  <main class="main_container">
     <h1 class="visually-hidden">Городок Седона</h1>
     <!--2-й логотип, как назвать?-->
     <section class="header">
+      <h2 class="visually-hidden">Логотип Седона</h2>
       <img class="header__logo" src="#" width="" height="" alt="Седона">
     </section>
-    <!--Лид блок - тк он есть на каждой странице со своим смыслом, но с одинаковым стилем (может стиль поменяться!) я не отношу его к преимуществам-->
 
+    <!--Лид блок - тк он есть на каждой странице со своим смыслом, но с одинаковым стилем (может стиль поменяться!) я не отношу его к преимуществам-->
         <div class="lead">
           <h2 class="lead__title">Оставьте свой отзыв</h2>
           <p class="lead__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
 
+        <form class="form-control" action="#" method="post">
+     <!--Форма блок 1-->
+          <fieldset class="form-control__field  user-form">
+            <legend class="user-form__titel">Представьтесь:</legend>
+            <label class="user-form__field user-field">
+              <span class="user-field__label">ИМЯ*:</span>
+              <input class="user-field__control--name form-control input" type="text" name="text" placeholder="Петр">
+            </label>
+            <label class="user-form user-field">
+              <span class="user-fild__label">ФАМИЛИЯ*:</span>
+              <input type="form-field__control--name form-control input" type="text" name="text" placeholder="Пустота">
+            </label>
+            <label class="user-settings__field user-field">
+              <span class="user-field__label">Отчество:</span>
+              <input class="form-field__control--name form-control input" type="text" name="text" placeholder="Викторович">
+            </label>
+          </fieldset>
+    <!--Форма блок 2-->
+          <fieldset class="user-form">
+            <legend class="user-settings__titel">Контактная информация:</legend>
+              <label class="user-settings-form__field form-field">
+                <span class="user-field__label">Контактный телефон*:</span>
+                <input class="form-field__control input" type="tel" name="tel" placeholder="Введите телефон">
+                <img class="form-field__image form-image" src="#" width="" height="" alt="Картинка телефона">
+              </label>
+              <label class="user-settings-form__field form-field">
+                <span class="user-field__label">Электронная почта*:</span>
+                <input class="form-field__control input" type="email" name="email" placeholder="Введите e-mail">
+                <img class="form-field__image form-image" src="#" width="" height="" alt="Картинка конверта">
+              </label>
+          </fieldset>
+    <!--Форма блок 3-->
 
+          <fieldset class="user-settings-form__field form-field">
+            <legend class="form-field__titel">Ваше общее впечатление:</legend>
+            <label class="form-field__radio user-form">
+              <input class="user-form__field--radio" type="radio" name="question-one" value="p" checked>
+              <span class="user-form__radio-name">Скорее положительное</span>
+            </label>
+            <label class="form-field__radio user-form">
+              <input  class="user-form__field--radio" type="radio" name="question-one" value="b">
+              <span class="user-form__radio-name">Скорее отрицательное</span>
+            </label>
+            <label class="form-field__radio user-form">
+              <input  class="user-form__field--radio" type="radio" name="question-one" value="b">
+              <span class="user-form__radio-name">Затрудняюсь ответить</span>
+            </label>
+          </fieldset>
 
+    <!--Форма блок 4--><!--В этом блоке у кнопок название по стилю совпалдат с радио кнопками, можно ли их сделать одним классом?-->
 
+          <fieldset class="user-settings-form form-field">
+            <legend class="form-field__titel">Посещенные достопримечательности:</legend>
+            <label class="form-field-checked__ user-form">
+              <input  class="user-form__field--checked" type="checkbox" name="subscribe" checked>
+              <span class="user-form__checked-name">Мост Дьявола</span>
+            </label>
+
+            <label class="subscribe-field">
+              <input class="user-settings-form__checked" type="checkbox" name="subscribe">
+              <span class="user-settings-form__checked-name">Гора-Колокол</span>
+            </label>
+            <label class="subscribe-field">
+              <input class="user-settings-form__checked" type="checkbox" name="subscribe">
+              <span class="user-settings-form__checked-name">Слайд-парк</span>
+            </label>
+            <label class="subscribe-field">
+              <input class="user-settings-form__checked" type="checkbox" name="subscribe">
+              <span class="user-settings-form__checked-name">Красные скалы</span>
+            </label>
+          </fieldset>
+
+      <!--Форма блок 5-->
+          <fieldset class="user-settings-form">
+            <label class="user-settings-form__field form-field">
+              <span class="form-field__label">Опишите свои эмоции:</span>
+              <textarea class="form-field__control textarea" name="user-settings-form-about" id="user-settings-form-about" placeholder="Опишите подробно все свои восторги"></textarea>
+            </label>
+          </fieldset>
+            <button class="form-control__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+              <input type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
+              <small class="stats__legend stats__legend--button">* — обязательные поля</small>
+          </form>
       </main>
+
       <footer class="footer">
         <div class="main-footer__wrapper">
           <div class="main-footer__hashtag">

@@ -6,27 +6,27 @@
   </head>
 
   <body class="page__body">
-    <header class="main-header">
-      <a class="main-header__logo">
+    <header class="page-header">
+      <a class="page-header__logo">
         <img src="img/logotype-sedona.svg" width="185" height="96" alt="Городок Седона">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggler" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
+      <nav class="page-nav">
+        <button class="page-nav__toggler" type="button">
+          <span class="visually-hidden ">Открыть меню.</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a>Главная</a>
+        <div class="page-nav__wrapper">
+          <ul class="page-nav__list nav-list ">
+            <li class="nav-list__item">
+              <a class="nav__link nav__link--active" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a>Фото и видео</a>
+            <li class="nav-list__item" >
+              <a class="nav-link" href="catalog.html">Фото и видео</a>
             </li>
-            <li class="site-list__item">
-              <a>Форма отзыва</a>
+            <li class="nav-list__item">
+              <a class="nav-link" href="form.html">Форма отзыва</a>
             </li>
-            <li class="site-list__item">
-              <a>HTML Academy</a>
+            <li class="nav-list__item">
+              <a class="nav-link" href="#">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -46,9 +46,53 @@
             <p class="lead__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
           </div>
 
-
-
-
+          <section class="card">
+            <h2 class="visually-hidden">Фотографии Седоны</h2>
+              <figure class="card__item">
+                <img class="card__image" src="#" width="" height="" alt="Фотография просторов">
+                <figcaption class="card__image-name">Неродные просторы</figcaption>
+              </figure>
+                <cite class="reviews__author-name">Автор фото: Борис</cite>
+                <div class="card__buttons-wrapper">
+                  <input type="image" src="#" alt="Мне нравится">
+                  <span class="">1350</span>
+                </div>
+              <figure class="card__item">
+                <img class="card__image" src="#" width="" height="" alt="Фотограция цветов">
+                <figcaption class="card__image-name">Местная растительность</figcaption>
+              </figure>
+                <cite class="reviews__author-name">Автор фото: Сергей</cite>
+                <div class="card__buttons-wrapper">
+                  <input type="image" src="#" alt="Мне нравится">
+                  <span class="">143</span>
+                </div>
+              <figure class="card__item">
+                <img class="card__image" src="#" width="" height="" alt="Фотография горной дороги">
+                <figcaption class="card__image-name">Дорога на север</figcaption>
+              </figure>
+                <cite class="reviews__author-name">Автор фото: Петр</cite>
+                <div class="card__buttons-wrapper">
+                  <input type="image" src="#" alt="Мне нравится">
+                  <span class="">96</span>
+                </div>
+              <figure class="card__item">
+                <img class="card__image" src="#" width="" height="" alt="Фотография горы">
+                <figcaption class="card__image-name">Мост дьявола</figcaption>
+              </figure>
+                <cite class="reviews__author-name">Автор фото: Антон</cite>
+                <div class="card__buttons-wrapper">
+                  <input type="image" src="#" alt="Мне нравится">
+                  <span class="">254</span>
+                </div>
+          </section>
+        <!--Пока не понимаю как сделать кнопку запуска видео-->
+          <section class="card-vidio">
+            <h2 class="card-vidio__title">Все еще сомневаетесь?</h2>
+            <p class="card-vidio__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <video controls preload="metadata" width="" height="">
+              <source src="#" type="#">
+            </video>
+          </section>
         </main>
         <footer class="footer">
           <div class="main-footer__wrapper">
