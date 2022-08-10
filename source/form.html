@@ -6,34 +6,35 @@
   </head>
 
 <body class="page__body">
-  <header class="page-header">
-    <a class="page-header__logo">
+  <header class="header">
+    <a class="header__logo">
       <img src="img/logotype-sedona.svg" width="185" height="96" alt="Городок Седона">
     </a>
-    <nav class="page-nav">
-      <button class="page-nav__toggler" type="button">
+    <nav class="header-nav">
+      <button class="header-nav__toggler" type="button">
         <span class="visually-hidden ">Открыть меню.</span>
       </button>
-      <div class="page-nav__wrapper">
-        <ul class="page-nav__list nav-list ">
+      <div class="header-nav__wrapper">3006
+
+        <ul class="header-nav__list nav-list">
           <li class="nav-list__item">
-            <a class="nav__link nav__link--active" href="index.html">Главная</a>
+            <a class="nav-list__item" href="index.html">Главная</a>
           </li>
           <li class="nav-list__item" >
-            <a class="nav-link" href="catalog.html">Фото и видео</a>
+            <a class="nav-list__item" href="catalog.html">Фото и видео</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-link" href="form.html">Форма отзыва</a>
+            <a class="nav-list__item" href="form.html">Форма отзыва</a>
           </li>
-          <li class="nav-list__item">
-            <a class="nav-link" href="#">HTML Academy</a>
+          <li class="nav-list__item ">
+            <a class="nav-list__item" href="#">HTML Academy</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <main class="main_container">
+  <main class="main-container">
     <h1 class="visually-hidden">Городок Седона</h1>
     <!--2-й логотип, как назвать?-->
     <section class="intro">
@@ -41,16 +42,12 @@
       <img class="intro__img" src="#" width="229" height="39" alt="Седона">
     </section>
 
-    <!--Лид блок - тк он есть на каждой странице со своим смыслом, но с одинаковым стилем (может стиль поменяться!) я не отношу его к преимуществам-->
-        <div class="lead">
-          <h2 class="lead__title">Оставьте свой отзыв</h2>
-          <p class="lead__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        </div>
-
-        <form class="form-control" action="#" method="post">
+        <form class="form" action="#" method="post">
+          <h2 class="form__lead-title">Оставьте свой отзыв</h2>
+          <p class="form__lead-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
      <!--Форма блок 1-->
           <fieldset class="form-control__field  user-form">
-            <legend class="user-form__titel">Представьтесь:</legend>
+            <legend class="user-form__title">Представьтесь:</legend>
             <label class="user-form__field user-field">
               <span class="user-field__label">ИМЯ*:</span>
               <input class="user-field__control--name form-control input" type="text" name="text" placeholder="Петр">
@@ -66,7 +63,7 @@
           </fieldset>
     <!--Форма блок 2-->
           <fieldset class="user-form">
-            <legend class="user-settings__titel">Контактная информация:</legend>
+            <legend class="user-settings__title">Контактная информация:</legend>
               <label class="user-settings-form__field form-field">
                 <span class="user-field__label">Контактный телефон*:</span>
                 <input class="form-field__control input" type="tel" name="tel" placeholder="Введите телефон">
@@ -80,7 +77,7 @@
           </fieldset>
     <!--Форма блок 3-->
           <fieldset class="user-settings-form__field form-field">
-            <legend class="form-field__titel">Ваше общее впечатление:</legend>
+            <legend class="form-field__title">Ваше общее впечатление:</legend>
             <label class="form-field__radio user-form">
               <input class="user-form__field--radio" type="radio" name="question-one" value="p" checked>
               <span class="user-form__radio-name">Скорее положительное</span>
@@ -97,7 +94,7 @@
 
     <!--Форма блок 4--><!--В этом блоке у кнопок название по стилю совпалдат с радио кнопками, можно ли их сделать одним классом?-->
           <fieldset class="user-settings-form form-field">
-            <legend class="form-field__titel">Посещенные достопримечательности:</legend>
+            <legend class="form-field__title">Посещенные достопримечательности:</legend>
             <label class="form-field-checked__ user-form">
               <input  class="user-form__field--checked" type="checkbox" name="subscribe" checked>
               <span class="user-form__checked-name">Мост Дьявола</span>

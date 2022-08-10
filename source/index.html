@@ -7,27 +7,28 @@
 
   <body class="page__body">
 
-    <header class="page-header">
-      <a class="page-header__logo">
+    <header class="header">
+      <a class="header__logo">
         <img src="img/logotype-sedona.svg" width="185" height="96" alt="Городок Седона">
       </a>
-      <nav class="page-nav">
-        <button class="page-nav__toggler" type="button">
+      <nav class="header-nav">
+        <button class="header-nav__toggler" type="button">
           <span class="visually-hidden ">Открыть меню.</span>
         </button>
-        <div class="page-nav__wrapper">
-          <ul class="page-nav__list nav-list ">
+        <div class="header-nav__wrapper">3006
+
+          <ul class="header-nav__list nav-list">
             <li class="nav-list__item">
-              <a class="nav__link nav__link--active" href="index.html">Главная</a>
+              <a class="nav-list__item" href="index.html">Главная</a>
             </li>
             <li class="nav-list__item" >
-              <a class="nav-link" href="catalog.html">Фото и видео</a>
+              <a class="nav-list__item" href="catalog.html">Фото и видео</a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-link" href="form.html">Форма отзыва</a>
+              <a class="nav-list__item" href="form.html">Форма отзыва</a>
             </li>
-            <li class="nav-list__item">
-              <a class="nav-link" href="#">HTML Academy</a>
+            <li class="nav-list__item ">
+              <a class="nav-list__item" href="#">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -36,33 +37,28 @@
 
     <main class="main-container">
       <h1 class="visually-hidden">Городок Седона</h1>
-      <!--2-й логотип, как назвать?-->
       <section class="intro">
         <h2 class="visually-hidden">Логотип Седона</h2>
         <img class="intro__img" src="#" width="282" height="214" alt="Добро пожаловать в великолепный город Седона!.">
       </section>
-      <!--Лид блок - тк он есть на каждой странице со своим смыслом, но с одинаковым стилем (может стиль поменяться!) я не отношу его к преимуществам-->
-        <div class="lead">
-          <h2 class="lead__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="lead__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-        </div>
       <!--Блок преимеществ-->
-        <section class="advantages">
-          <h2 class="visually-hidden">Преимущества.</h2>
+      <section class="advantages">
+          <h2 class="advantages__lead-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="advantages__lead-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
             <ol class="advantages__list">
       <!--Блок преимуществ 1-->
-              <li class="advantages__item">
-                <div class="advantages__item--foto">
-                  <h3 class="advantages__title">Настоящий городок</h3>
-                  <span class="advantages__description">-- №1 --</span>
-                  <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <li class="advantages__item advantages__item-city">
+                <div class="advantages__item-city--has-picture">
+                  <h3 class="advantages__title--has-picture">Настоящий городок</h3>
+                  <span class="advantages__description--has-picture">-- №1 --</span>
+                  <p class="advantages__description--has-picture">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
                 <div class="advantages__item-pic">
                   <img src="#" width="320" height="260" alt="Фотография городка.">
                 </div>
 <!--Подблок преимуществ 1го блока-->
                 <ul class="advantages__sublist">
-                  <li class="advantages__sublist">
+                  <li class="advantages__sublist ">
                       <div class="advantages__sublist-pic">
                         <img src="#" width="39" height="37" alt="Изображение домик.">
                       </div>
@@ -86,17 +82,15 @@
               </ul>
             </li>
       <!--Блок преимуществ 2-->
-            <li class="advantages__item">
-              <div class="advantages__item-foto">
-                <div class="advantages__tem-pic">
+            <li class="advantages__item advantages__item-city">
+                <div class="advantages__item-pic">
                   <img src="#" width="320" height="260" alt="Фотография гор">
                 </div>
-                <div class="advantages__item--foto">
-                  <h3 class="advantages__title">Там есть мост Дьяволa</h3>
-                  <span class="advantages__description">-- №2 --</span>
-                  <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                <div class="advantages__item-city">
+                  <h3 class="advantages__title--has-picture">Там есть мост Дьяволa</h3>
+                  <span class="advantages__description--has-picture">-- №2 --</span>
+                  <p class="advantages__description--has-picture">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                 </div>
-              </div>
             </li>
       <!--Блок преимуществ 3-->
             <li class="advantages__item">
@@ -132,12 +126,140 @@
       </section>
 
     </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="main-footer__hashtag">
-          <span class="main-footer__hashtag">#visitSEDONA</span>
+    <!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+
+  <body class="page__body">
+
+    <header class="header">
+      <a class="header__logo">
+        <img src="img/logotype-sedona.svg" width="185" height="96" alt="Городок Седона">
+      </a>
+      <nav class="header-nav">
+        <button class="header-nav__toggler" type="button">
+          <span class="visually-hidden ">Открыть меню.</span>
+        </button>
+        <div class="header-nav__wrapper">3006
+
+          <ul class="header-nav__list nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__item" href="index.html">Главная</a>
+            </li>
+            <li class="nav-list__item" >
+              <a class="nav-list__item" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__item" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="nav-list__item ">
+              <a class="nav-list__item" href="#">HTML Academy</a>
+            </li>
+          </ul>
         </div>
-        <div class="main-footer__social social">
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <h1 class="visually-hidden">Городок Седона</h1>
+      <section class="intro">
+        <h2 class="visually-hidden">Логотип Седона</h2>
+        <img class="intro__img" src="#" width="282" height="214" alt="Добро пожаловать в великолепный город Седона!.">
+      </section>
+      <!--Блок преимеществ-->
+      <section class="advantages">
+          <h2 class="advantages__lead-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="advantages__lead-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+            <ol class="advantages__list">
+      <!--Блок преимуществ 1-->
+              <li class="advantages__item item-has-picture">
+                <div class="item-city">
+                  <h3 class="item-city__title">Настоящий городок</h3>
+                  <span class="item-city__description-number">-- №1 --</span>
+                  <p class="item-city__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                </div>
+                <div class="advantages__item-pic">
+                  <img src="#" width="320" height="260" alt="Фотография городка.">
+                </div>
+<!--Подблок преимуществ 1го блока-->
+                <ul class="advantages__sublist">
+                  <li class="advantages__sublist ">
+                      <div class="advantages__sublist-pic">
+                        <img src="#" width="39" height="37" alt="Изображение домик.">
+                      </div>
+                      <h4 class="advantages__sublist-title">Жильё</h4>
+                      <p class="advantages__sublist-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                  </li>
+                <li class="advantages__sublist">
+                    <div class="advantages__sublist-pic">
+                      <img class="" src="#" width="40" height="40" alt="Изображение бургера.">
+                    </div>
+                    <h4 class="advantages__sublist-title">Еда</h4>
+                    <p class="advantages__sublist-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                </li>
+                <li class="advantages__sublist">
+                    <div class="advantages__sublist-pic">
+                      <img src="#" width="32" height="38" alt="Изображение подарка">
+                    </div>
+                    <h4 class="advantages__sublist-title">Сувениры</h4>
+                    <p class="advantages__sublist-description">Не только китайского, но и настоящего местного производства!</p>
+                </li>
+              </ul>
+            </li>
+      <!--Блок преимуществ 2-->
+            <li class="advantages__item item-mountain">
+                <div class="item-mountain__item-pic">
+                  <img src="#" width="320" height="260" alt="Фотография гор">
+                </div>
+                <div class="aitem-mountain">
+                  <h3 class="item-mountain__title">Там есть мост Дьяволa</h3>
+                  <span class="item-mountain__description">-- №2 --</span>
+                  <p class="item-mountain__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                </div>
+            </li>
+      <!--Блок преимуществ 3-->
+            <li class="advantages__item">
+                <h3 class="advantages__title">Небольшая Площадь</h3>
+                <span class="advantages__description">-- №3 --</span>
+                <p class="advantages-description">Все достопримечательности находятся очень близко</p>
+            </li>
+      <!--Блок преимуществ 4-->
+            <li class="advantages__item">
+                <h3 class="advantages__title">Красивая дорога</h3>
+                <span class="advantages__description">-- №4 --</span>
+                <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+      <!--Блок преимуществ 5-->
+            <li class="advantages__item">
+                <h3 class="advantages__title">Мало туристов</h3>
+                <span class="advantages__description">-- №5 --</span>
+                <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
+            </li>
+          </ol>
+      </section>
+      <!--Блок заинтересовались-->
+      <section class="appointment">
+        <h2 class="appointment__title">Заинтересовались?</h2>
+        <p class="appointment__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="appointment__button button" href="#">Найти гостиницу</a>
+      </section>
+
+      <!--Блок карта, как вставить карту?-->
+      <section class="contakt">
+        <h3 class="visually-hidden">Карта городка Седона</h3>
+        <img class="contakt__map" src="#" width="320" height="350" alt="Карта">
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__hashtag">
+          <span class="footer__hashtag">#visitSEDONA</span>
+        </div>
+        <div class="footer__social social">
           <b class="social__title">Давайте дружить!</b>
           <ul class="social__list">
             <li class="social__item">
@@ -151,11 +273,14 @@
             </li>
           </ul>
         </div>
-        <div class="main-footer__copyright copyright">
+        <div class="footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>
     </footer>
+  </body>
+</html>
+
   </body>
 </html>
