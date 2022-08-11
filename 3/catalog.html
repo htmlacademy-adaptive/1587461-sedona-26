@@ -7,81 +7,78 @@
 </head>
 
   <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo">
+    <header class="header">
+      <a class="header__logo">
         <img src="img/logotype-sedona.svg" width="185" height="96" alt="Городок Седона">
       </a>
-      <nav class="page-nav">
-        <button class="page-nav__toggler" type="button">
+      <nav class="header-nav">
+        <button class="header-nav__toggler" type="button">
           <span class="visually-hidden ">Открыть меню.</span>
         </button>
-        <div class="page-nav__wrapper">
-          <ul class="page-nav__list nav-list ">
+        <div class="header-nav__wrapper">
+
+          <ul class="header-nav__list nav-list">
             <li class="nav-list__item">
-              <a class="nav__link nav__link--active" href="index.html">Главная</a>
+              <a class="nav-list__item" href="index.html">Главная</a>
             </li>
             <li class="nav-list__item" >
-              <a class="nav-link" href="catalog.html">Фото и видео</a>
+              <a class="nav-list__item" href="catalog.html">Фото и видео</a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-link" href="form.html">Форма отзыва</a>
+              <a class="nav-list__item" href="form.html">Форма отзыва</a>
             </li>
-            <li class="nav-list__item">
-              <a class="nav-link" href="#">HTML Academy</a>
+            <li class="nav-list__item ">
+              <a class="nav-list__item" href="#">HTML Academy</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
+
     <main class="main-container">
       <h1 class="visually-hidden">Городок Седона</h1>
-      <!--2-й логотип, как назвать?-->
       <section class="intro">
         <h2 class="visually-hidden">Логотип Седона</h2>
         <img class="intro__img" src="#" width="229" height="39" alt="Седона">
       </section>
-      <!--Лид блок - тк он есть на каждой странице со своим смыслом, но с одинаковым стилем (может стиль поменяться!) я не отношу его к преимуществам-->
-          <div class="lead">
-            <h2 class="lead__title">Фото и видео</h2>
-            <p class="lead__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-          </div>
-          <section class="card">
-            <h2 class="visually-hidden">Фотографии Седоны</h2>
+      <section class="card">
+        <h2 class="card__lead-title">Фото и видео</h2>
+        <p class="card__lead-text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
               <figure class="card__item">
                 <img class="card__image" src="#" width="267" height="280" alt="Фотография просторов">
                 <figcaption class="card__image-name">Неродные просторы</figcaption>
               </figure>
-                <cite class="reviews__author-name">Автор фото: Борис</cite>
-                <div class="card__buttons-wrapper">
-                  <input type="image" src="#" alt="Мне нравится">
-                  <span class="">1350</span>
-                </div>
+                <cite class="card__author-name">Автор фото: Борис</cite>
+                <button class="card__favorite" type="button">1350</button>
               <figure class="card__item">
                 <img class="card__image" src="#" width="267" height="280" alt="Фотограция цветов">
                 <figcaption class="card__image-name">Местная растительность</figcaption>
               </figure>
-                <cite class="reviews__author-name">Автор фото: Сергей</cite>
+                <cite class="card__author-name">Автор фото: Сергей</cite>
+                <button class="card__favorite" type="button">1350</button>
+
+
                 <div class="card__buttons-wrapper">
-                  <input type="image" src="#" alt="Мне нравится">
-                  <span class="">143</span>
+                  <input class="card__number-likes" type="image" src="#" alt="Мне нравится">
+                  <span class="card__number-likes">143</span>
                 </div>
               <figure class="card__item">
                 <img class="card__image" src="#" width="267" height="280" alt="Фотография горной дороги">
                 <figcaption class="card__image-name">Дорога на север</figcaption>
               </figure>
-                <cite class="reviews__author-name">Автор фото: Петр</cite>
+                <cite class="card__author-name">Автор фото: Петр</cite>
                 <div class="card__buttons-wrapper">
-                  <input type="image" src="#" alt="Мне нравится">
-                  <span class="">96</span>
+                  <input class="card__number-likes" type="image" src="#" alt="Мне нравится">
+                  <span class="card__number-likes">96</span>
                 </div>
               <figure class="card__item">
                 <img class="card__image" src="#" width="267" height="280" alt="Фотография горы">
                 <figcaption class="card__image-name">Мост дьявола</figcaption>
               </figure>
-                <cite class="reviews__author-name">Автор фото: Антон</cite>
+                <cite class="card__author-name">Автор фото: Антон</cite>
                 <div class="card__buttons-wrapper">
-                  <input type="image" src="#" alt="Мне нравится">
-                  <span class="">254</span>
+                  <input class="card__number-likes" type="image" src="#" alt="Мне нравится">
+                  <span class="card__number-likes">254</span>
                 </div>
           </section>
         <!--Пока не понимаю как сделать кнопку запуска видео-->
@@ -94,12 +91,12 @@
           </section>
         </main>
         <footer class="footer">
-          <div class="main-footer__wrapper">
-            <div class="main-footer__hashtag">
-              <span class="main-footer__hashtag">#visitSEDONA</span>
+          <div class="footer__wrapper">
+            <div class="footer__hashtag">
+              <p class="footer__hashtag">#visitSEDONA</p>
             </div>
-            <div class="main-footer__social social">
-              <b class="social__title">Давайте дружить!</b>
+            <div class="footer__social social">
+              <h2 class="visually-hidden">Социальные сети.</h2>
               <ul class="social__list">
                 <li class="social__item">
                   <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
@@ -112,10 +109,11 @@
                 </li>
               </ul>
             </div>
-            <div class="main-footer__copyright copyright">
-              <b class="copyright__text">Разработано:</b>
+            <div class="footer__copyright copyright">
+              <p class="copyright__text">Разработано:</p>
               <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </div>
           </div>
-      </footer>
+        </footer>
     </body>
+    </html>
